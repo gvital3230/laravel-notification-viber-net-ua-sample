@@ -29,5 +29,11 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-
+    'vibernetua' => [
+        'endpoint' => env('VIBERNETUA_ENDPOINT', 'https://my2.viber.net.ua/api/v2/viber/dispatch'),
+        'token' => env('VIBERNETUA_TOKEN'),
+        'sender' => env('VIBERNETUA_SENDER'),
+        'debug' => env('VIBERNETUA_DEBUG'),
+        'sandboxMode' => env('VIBERNETUA_SANDBOX_MODE', false),
+    ],
 ];
